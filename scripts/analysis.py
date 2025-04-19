@@ -118,8 +118,7 @@ comparisons = {
     'Hom_vs_WT_Up': list(up_hom_wt),
     'Hom_vs_WT_Down': list(down_hom_wt),
     'Het_vs_Hom_Up': list(up_het_hom),
-    'Het_vs_Hom_Down': list(down_het_hom)
-}
+    'Het_vs_Hom_Down': list(down_het_hom)}
 
 #save DE gene lists
 print("saving differentially expressed gene lists")
@@ -171,8 +170,7 @@ def plot_enr(gene_list, comparison_name):
         data=top_terms,
         x='Gene_Count',
         y='Term',
-        palette='viridis'
-    )
+        palette='viridis')
     plt.xlabel('Number of Genes')
     plt.ylabel('GO Biological Process')
     plt.tight_layout()
